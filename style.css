@@ -285,3 +285,12 @@ section, footer { scroll-margin-top: 84px; }
 /* nav: links only, on the right */
 .topbar-inner { justify-content: flex-end; }
 @media (max-width: 440px) { .topbar-inner { justify-content: center; } .nav-links a[href="#education"] { display: inline; } }
+
+/* project names link to the real products */
+.proj {
+  color: var(--cocoa); font-weight: 700; text-decoration: none;
+  background: linear-gradient(var(--butter), var(--butter)) no-repeat 0 92% / 100% 5px;
+  transition: background-size .2s ease;
+}
+.proj span { font-size: .8em; margin-left: 2px; color: var(--mocha-text); }
+.proj:hover { background-size: 100% 80%; }
