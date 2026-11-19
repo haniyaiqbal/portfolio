@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haniya Iqbal · Backend Engineer</title>
+  <meta name="description" content="Haniya Iqbal, backend engineer building production systems in IoT, fintech, HR SaaS and AI with NestJS, PostgreSQL and AWS." />
+  <meta property="og:title" content="Haniya Iqbal · Backend Engineer" />
+  <meta property="og:description" content="Backend engineer building production systems in IoT, fintech, HR SaaS and AI." />
+  <meta name="theme-color" content="#f7efe6" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23e7b278' stroke='%233a2a24' stroke-width='6'/><circle cx='50' cy='50' r='30' fill='%23f2b3b8'/><circle cx='50' cy='50' r='12' fill='%23f7efe6' stroke='%233a2a24' stroke-width='5'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topbar" id="topbar" aria-label="Main">
+    <div class="topbar-inner">
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page" id="top">
+
+    <!-- hero -->
+    <header class="hero reveal">
+      <h1>Haniya Iqbal</h1>
+      <p class="role">Backend Engineer</p>
+      <p class="summary">
+        Building production systems at Ninja Studio for IoT, fintech, HR SaaS and AI products,
+        with NestJS, PostgreSQL and AWS.
+      </p>
+      <nav class="links">
+        <a href="https://github.com/haniyaiqbal" target="_blank" rel="noopener">GitHub</a>
+        <!-- <a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn</a> -->
+        <a href="mailto:haniyai891@gmail.com">Email</a>
+        <a href="https://drive.google.com/file/d/1oEiRlycBxDMLBE-HTRYSvma3lpY0VS1B/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+
+    <!-- experience -->
+    <section id="experience" class="reveal">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer <span>· Ninja Studio</span></h3>
+          <time>Apr 2025 – Present</time>
+        </div>
+        <ul class="timeline points">
+          <li>Built backend services for <b>Moana</b>, an IoT device management platform, including hierarchical role-based access, 2FA, TOTP-based device PIN reset, telemetry APIs and firmware management with delta-patch OTA updates.</li>
+          <li>Designed certificate-based device authentication using CSR issuance, HMAC-based device claiming and mutual TLS through Caddy.</li>
+          <li>Architected a queue-driven device log pipeline with BullMQ and Redis, storing chunked gzip logs on S3 with a metadata layer for reliable large-volume processing.</li>
+          <li>Implemented the real-time MQTT (EMQX) layer for remote port configuration, audit logging, device connectivity events and Firebase push notifications, with automated TLS certificate renewal.</li>
+          <li>Deployed AWS infrastructure with CloudFormation and CI/CD, monitored with CloudWatch, Uptime Kuma and Sentry.</li>
+          <li>Built an OAuth 2.0–secured MCP server for <b>KollabHR</b> that lets AI clients work with HR data under fail-closed, branch-scoped authorization, plus a change-request workflow with section-level permissions, transactional approvals and audit logs.</li>
+          <li>Built Stripe auction payments for <b>Land4Rent</b>: card pre-authorization, manual capture and release, Automatic Tax, annual billing and idempotency, along with lease questionnaire and renter KYC workflows.</li>
+          <li>Built an AI content pipeline for <b>GoBlinkly</b> covering keyword and SERP research, drafting, internal linking, quality review and publishing to Webflow.</li>
+          <li>Built an AWS Bedrock assistant for <b>GrantGPT</b> that drafts grant answers and auto-fills application fields from organization data.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer Intern <span>· Ninja Studio</span></h3>
+          <time>Oct 2024 – Apr 2025</time>
+        </div>
+        <ul class="timeline points">
+          <li>Reduced <b>TenantPay</b> payment-processing time from <mark>40 minutes to 5 minutes</mark> (87.5%) by introducing batch processing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="skillset">
+        <div class="sk-row"><p class="sk-label">Languages</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy" width="20" height="20" />TypeScript</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy" width="20" height="20" />JavaScript</li></ul></div>
+        <div class="sk-row"><p class="sk-label">Backend</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nestjs/nestjs-original.svg" alt="" loading="lazy" width="20" height="20" />NestJS</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" width="20" height="20" />Node.js</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/express/express-original.svg" alt="" loading="lazy" width="20" height="20" />Express</li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/typeorm.svg" alt="" class="mono" loading="lazy" width="20" height="20" />TypeORM</li><li><span class="badge">M</span>MCP</li></ul></div>
+        <div class="sk-row"><p class="sk-label">Data</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" width="20" height="20" />PostgreSQL</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/redis/redis-original.svg" alt="" loading="lazy" width="20" height="20" />Redis</li><li><span class="badge">B</span>BullMQ</li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/mqtt.svg" alt="" class="mono" loading="lazy" width="20" height="20" />MQTT</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/supabase/supabase-original.svg" alt="" loading="lazy" width="20" height="20" />Supabase</li></ul></div>
+        <div class="sk-row"><p class="sk-label">Cloud</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy" width="20" height="20" />AWS</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy" width="20" height="20" />Docker</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt="" loading="lazy" width="20" height="20" />GitHub Actions</li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/caddy.svg" alt="" class="mono" loading="lazy" width="20" height="20" />Caddy</li></ul></div>
+        <div class="sk-row"><p class="sk-label">AI</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg" alt="" class="mono" loading="lazy" width="20" height="20" />OpenAI</li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/googlegemini.svg" alt="" class="mono" loading="lazy" width="20" height="20" />Gemini</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy" width="20" height="20" />AWS Bedrock</li></ul></div>
+        <div class="sk-row"><p class="sk-label">Tools</p><ul class="chips"><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/stripe.svg" alt="" class="mono" loading="lazy" width="20" height="20" />Stripe</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jest/jest-plain.svg" alt="" loading="lazy" width="20" height="20" />Jest</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-original.svg" alt="" loading="lazy" width="20" height="20" />Firebase</li><li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sentry/sentry-original.svg" alt="" loading="lazy" width="20" height="20" />Sentry</li></ul></div>
+      </div>
+    </section>
+
+    <!-- education -->
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <div class="job-head">
+        <h3>B.Tech in Computer Science <span>· Shri Vaishnav Vidyapeeth Vishwavidyalaya</span></h3>
+        <time>2021 – 2025</time>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <footer id="contact" class="reveal">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p class="bubble big">say hi!</p>
+        <a class="mail" href="mailto:haniyai891@gmail.com">haniyai891@gmail.com</a>
+      </div>
+      <p class="fine">© <span id="y">2026</span> Haniya Iqbal</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // fade sections in
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+    // soft line under the nav once you scroll
+    const bar = document.getElementById('topbar');
+    addEventListener('scroll', () => bar.classList.toggle('scrolled', scrollY > 10), { passive: true });
+  </script>
+</body>
+</html>
