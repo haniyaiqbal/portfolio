@@ -123,16 +123,16 @@ h2::after {
 .job-head h3 span { color: var(--mocha-text); font-weight: 600; }
 time { font-family: var(--hand); font-size: 20px; color: var(--cocoa-soft); white-space: nowrap; }
 
-.timeline { list-style: none; border-left: 3px dashed var(--butter-2); margin-left: 9px; }
+.timeline { list-style: none; margin-left: 9px; }
 .timeline li { position: relative; padding: 12px 0 14px 28px; }
-.timeline li::before { /* tiny donut bullet */
-  content: ''; position: absolute; left: -11.5px; top: 19px; width: 20px; height: 20px; border-radius: 50%;
-  border: 2px solid var(--cocoa);
-  background: radial-gradient(circle, var(--cream) 0 3px, var(--cocoa) 3px 4.5px, var(--blush) 5px 7px, var(--dough) 7.5px);
+.timeline li::before { /* cloud-with-a-tick bullet: "shipped" */
+  content: ''; position: absolute; left: -16px; top: 14px; width: 29px; height: 29px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%27M9.5%2024.5a5.5%205.5%200%2001-.6-11%207.5%207.5%200%200114.3-1.8%206.3%206.3%200%2001.3%2012.8z%27%20fill%3D%27%23f8dc97%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linejoin%3D%27round%27/%3E%3Cpath%20d%3D%27M12.5%2018l2.5%202.5%204.5-5%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20fill%3D%27none%27/%3E%3C/svg%3E") center / contain no-repeat;
+  filter: drop-shadow(1.5px 2px 0 rgba(58, 42, 36, .15));
+  transition: transform .35s cubic-bezier(.34,1.56,.64,1);
 }
-.timeline li:nth-child(even)::before {
-  background: radial-gradient(circle, var(--cream) 0 3px, var(--cocoa) 3px 4.5px, var(--choco) 5px 7px, var(--dough) 7.5px);
-}
+.timeline li:nth-child(even)::before { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%27M9.5%2024.5a5.5%205.5%200%2001-.6-11%207.5%207.5%200%200114.3-1.8%206.3%206.3%200%2001.3%2012.8z%27%20fill%3D%27%23f2b3b8%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linejoin%3D%27round%27/%3E%3Cpath%20d%3D%27M12.5%2018l2.5%202.5%204.5-5%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20fill%3D%27none%27/%3E%3C/svg%3E") center / contain no-repeat; }
+.timeline li:hover::before { transform: translateY(-3px) scale(1.12); }
 .timeline h4 { font-family: var(--round); font-weight: 700; font-size: 17px; }
 .timeline h4 span { font-weight: 600; font-size: 14px; color: var(--mocha-text); margin-left: 8px; }
 .timeline p { color: var(--cocoa-soft); font-size: 15.5px; margin-top: 2px; }
@@ -176,10 +176,8 @@ footer h2::after { background: var(--lavender); }
 /* say-hi bubble gets a soft pink fill */
 .bubble.big, .bubble.big::after { background: #fde8ec; }
 
-/* every third timeline donut has lavender frosting */
-.timeline li:nth-child(3n)::before {
-  background: radial-gradient(circle, var(--cream) 0 3px, var(--cocoa) 3px 4.5px, var(--lavender-2) 5px 7px, var(--dough) 7.5px);
-}
+/* every third cloud is lavender */
+.timeline li:nth-child(3n)::before { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cpath%20d%3D%27M9.5%2024.5a5.5%205.5%200%2001-.6-11%207.5%207.5%200%200114.3-1.8%206.3%206.3%200%2001.3%2012.8z%27%20fill%3D%27%23d4caf5%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linejoin%3D%27round%27/%3E%3Cpath%20d%3D%27M12.5%2018l2.5%202.5%204.5-5%27%20stroke%3D%27%233a2a24%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20fill%3D%27none%27/%3E%3C/svg%3E") center / contain no-repeat; }
 
 /* hover colours */
 .links a:nth-child(2):hover { background-image: linear-gradient(var(--pastel-pink), var(--pastel-pink)); }
